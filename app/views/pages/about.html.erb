@@ -6,5 +6,8 @@
   <div id="content">
     <h1>Profile</h1>
     <p>Email: <%= @current_user.email %></p>
+    <p>Avatar: <%= image_tag @current_user.avatar.url %></p>
+    <p><%= image_tag @current_user.avatar.url(:medium) %></p>
+    <p><%= image_tag @current_user.avatar.url(:thumb) %></p>
   </div>
 </div>
